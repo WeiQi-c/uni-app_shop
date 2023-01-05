@@ -1,5 +1,5 @@
 <template>
-	<view class="uni-searchbar">
+	<view class="uni-searchbar" style="background-color: #c00000;">
 		<view :style="{borderRadius:radius+'px',backgroundColor: bgColor}" class="uni-searchbar__box"
 			@click="searchClick">
 			<view class="uni-searchbar__box-icon-search">

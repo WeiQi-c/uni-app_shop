@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 
+// 导入 store 的实例对象
+import store from './store/store.js'
+
 // 导入 $http 对象
 import { $http } from '@escook/request-miniprogram'
 
@@ -33,13 +36,13 @@ uni.$showMsg = function (title = '数据加载失败', duration = 1500) {
 	})
 }
 
-
 Vue.config.productionTip = false
 
 App.mpType = 'app'
 
 const app = new Vue({
-    ...App
+    ...App,
+		store
 })
 app.$mount()
 // #endif
